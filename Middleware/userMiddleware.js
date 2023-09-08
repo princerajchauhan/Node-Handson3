@@ -1,5 +1,5 @@
 const validate = (req, res, next) => {
-    if (req.params.age >= 18) {
+    if (req.params.age >= 18 || req.query.age >= 18) {
         next()
     }
     else {

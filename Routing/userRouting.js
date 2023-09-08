@@ -9,7 +9,7 @@ route.get("/", (req, res)=> {
 
 route.get("/api/login/:age", validate, login)
 route.get("/api/register", register)
-route.get("/api/logout", logout)
+route.get("/api/logout", validate, logout)
 
 
 module.exports = route
